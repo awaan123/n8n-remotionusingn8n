@@ -1,0 +1,107 @@
+# ==========================================
+# Components folder: keep structure, exclude all payloads/data
+# ==========================================
+components/*
+!components/.gitkeep
+
+# ==========================================
+# Entries folder: completely excluded
+# ==========================================
+**/entries/
+**/entries/**
+**/entry/
+**/entry/**
+src/entries/
+src/entries/**
+remotion-video-creation/src/entries/
+remotion-video-creation/src/entries/**
+
+# ==========================================
+# Render folders: keep folder structure, exclude all contents & videos
+# ==========================================
+remotion-video-creation/renders/*
+!remotion-video-creation/renders/.gitkeep
+renders/*
+!renders/.gitkeep
+rendered/*
+!rendered/.gitkeep
+render/*
+!render/.gitkeep
+
+# ==========================================
+# Generated video components (keep folder structure)
+# ==========================================
+remotion-video-creation/src/videos/*
+!remotion-video-creation/src/videos/.gitkeep
+src/videos/*
+!src/videos/.gitkeep
+
+# ==========================================
+# Media & Video files
+# ==========================================
+*.mp4
+*.mkv
+*.mov
+*.webm
+*.avi
+*.wmv
+*.flv
+
+# ==========================================
+# Dependencies & Build artifacts
+# ==========================================
+node_modules/
+**/node_modules/
+build/
+**/build/
+dist/
+**/dist/
+out/
+**/out/
+.remotion/
+**/.remotion/
+package-lock.json.backup
+
+# ==========================================
+# Python artifacts
+# ==========================================
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+*.egg-info/
+.eggs/
+
+# ==========================================
+# Environment variables and credentials
+# ==========================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+*.crt
+*.pfx
+*.p12
+
+# ==========================================
+# OS & IDE metadata
+# ==========================================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.bak
+*.tmp
+*.temp
+*.log
